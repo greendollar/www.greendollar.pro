@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"1e7946724e",applicationID:"31671751"};;/*! For license information please see nr-loader-rum-1.252.1.min.js.LICENSE.txt */
+            (()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const x=(0,n.mF)().o;var E=r(385),D=r(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,k);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.252.1",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([g,e,r,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},8862:(e,t,r)=>{"use strict";r.d(t,{j:()=>A});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"],h=["setErrorHandler","finished","addToTrace","addRelease"];function v(){const e=(0,g.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var m=r(2825);const b=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let y=!1;function A(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,A=arguments.length>3?arguments[3]:void 0,{init:w,info:_,loader_config:x,runtime:E={loaderType:p},exposed:D=!0}=t;const k=(0,g.gG)();_||(w=k.init,_=k.info,x=k.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,x||{}),_.jsAttributes??={},d.v6&&(_.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,_);const j=(0,i.P_)(e.agentIdentifier),S=[_.beacon,_.errorBeacon];y||(j.proxy.assets&&(b(j.proxy.assets),S.push(j.proxy.assets)),j.proxy.beacon&&S.push(j.proxy.beacon),v(),(0,g.EZ)("activatedFeatures",m.T)),E.denyList=[...j.ajax.deny_list||[],...j.ajax.block_internal?S:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),v=p.get("tracer"),m="api-",b=m+"ixn-";function y(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),_(m,n,!0,o||null===r?"session":void 0)(t,r)}function A(){}h.forEach((e=>{g[e]=_(m,e,!0,"api")})),g.addPageAction=_(m,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=_(m,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,_(m,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return y(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return y("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return y("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new A).get()};var w=A.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(b+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(v.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw v.emit("fn-err",[arguments,this,e],r),e}finally{v.emit("fn-end",[(0,s.z)()],r)}}}};function _(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=_(b,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),g}(e.agentIdentifier,A)),void 0===e.exposed&&(e.exposed=D),y=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.252.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-coXLfM7RkXRTFzWd9lXnf/fAuVs/D91sUGj0PeykZ9LOawtrZP/2njEtfjyJtUkhEhkSa8dmiYkqP0kHTmBVFA=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.1.PROD"]=self["webpackChunk:NRBA-1.252.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(8862);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,957));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,v.D)(e,w)}function w(e,t){return t}var _=i(8632),x=i(4402),E=i(4351);var D=i(5546),k=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,k.N)((()=>(0,D.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,D.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[p,T,P],loaderType:"lite"})})()})();</script>
+            <meta name="document-type" content="Public">
+            <meta name="document-rating" content="Safe for Kids">
+            <meta name="robots" content="ALL, INDEX, FOLLOW">
+            <meta name="googlebot" content="index, follow">
+            <meta name="Expires" content="never">
+            <meta name="coverage" content="Worldwide">
+            <meta name="distribution" content="Global">
+            <meta name="rating" content="General">
+            <meta name="revisit-after" content="7 days">
+            <meta name="target" content="all">
+            <meta name="HandheldFriendly" content="True">
+            <meta name="mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+                <link rel="apple-touch-icon" href=" ites.co.in/files/1481220/favicon/favicon.png?v=1794111115"/>
+            
+            
+            <meta name="theme-color" content="#82B541">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+            
+            
+            
+            <meta name="title" content="Deposit Payment 0ptions M-pesa  |  s">
+            <meta name="description" content="M-PESA PAYMENT
+            
+            <meta name="author" content">
+            <meta name="keywords" content="post">
+            
+            
+            <meta name="csrf-token" content="e2eYIpzXLRD80USpS3uMgnO9nlf7f43P6aCc4Qbf">
+            
+            
+            
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Deposit Payment 0ptions M-pesa  |  ">
+            <meta name="twitter:image" content="https:/ les/1481220/business/logo/logo-1583528105.jpeg">
+            <meta name="twitter:image:alt" content="Deposit Payment 0ptions M-pesa  |  de in  s">
+            <meta name="twitter:description" content="M-PESA PAYMENT
+            
+            
+            
+            <meta property="og:site_name" content=" ">
+            <meta property="og:type" content="website">
+            <meta property="og:title" content="Deposit Payment 0ptions M-pesa  |   ">
+            <meta property="og:description" content="M-PESA PAYMENT
+           ">
+            <meta property="og:image" content=" uhforextradeinvestments.websites.co.in/files/1481220/business/logo/logo-1583528105.jpeg">
+            <meta property="og:url" content=" eduhforextradeinvestments.websites.co.in/update/deposit-payment-0ptions-m-pesa/2035567">
+            
+            
+            
+            
+            <meta name="geo.position" content="32.7762719;-96.7968559">
+            <meta name="geo.placename" content="Dallas">
+            <meta name="geo.region" content="US">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+<meta name="geo.position" content="32.7762719;-96.7968559">
+<meta name="geo.placename" content="Dallas">
+<meta name="geo.region" content="US">
+        <title > Deposit M-pesa | Green Dollar </title>
+
+        
+        <!-- Favicon -->
+    <link rel="icon" href=" stments.websites.co.in/files/1481220/favicon/favicon.png?v=275839129" type="image/png" />
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="preload" as="font" onload="this.rel='stylesheet'">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="preload" as="font" onload="this.rel='stylesheet'">
+
+
+        <!-- BS4 minified v1.0.0 CSS -->
+        <link rel="stylesheet" href="https://eeduhforextradeinvestments.websites.co.in/service-pro/css/bootstrap.min.css?v=571632411"> 
+        <!-- Custom minified CSS -->
+        <link rel="stylesheet" href="https://eeduhforextradeinvestments.websites.co.in/service-pro/css/custom.min.css?v=1792047674"> 
+
+        
+        
+        <link rel="stylesheet" href="https://eeduhforextradeinvestments.websites.co.in/service-pro/css/ecommerce.min.css?v=470615905"> 
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.7.0/css/flag-icons.min.css">
+        
+        <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" href="https://eeduhforextradeinvestments.websites.co.in/common/css/custom-toast.css">
+
+        <!-- FontAwesome -->
+        <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" href="https://eeduhforextradeinvestments.websites.co.in/service-pro/fonts/css/all.min.css">
+
+        <!-- Select2 css files -->
+        <link media="none" onload="if(media!='all')media='all'" href="https://eeduhforextradeinvestments.websites.co.in/common/css/select2.min.css" rel="stylesheet" />
+
+        <!-- animate.css -->
+        <link media="none" onload="if(media!='all')media='all'" href="https://eeduhforextradeinvestments.websites.co.in/common/css/animate.css" rel="stylesheet" />
+
+        <!-- manifest request -->
+        <link rel="manifest" href="/manifest.json?theme_color=%2382B541">
+
+        <link rel="canonical" href="https://eeduhforextradeinvestments.websites.co.in/index.php">
+
+        <link rel="alternate" href="https://eeduhforextradeinvestments.websites.co.in" hreflang="en-us">
+        <style>
+            body > footer.page-footer > div > div > div.row.py-4 > div > div > div:nth-child(1) > div{
+                display: block !important;
+                margin: unset !important
+            }
+             @media (max-width: 320px){
+                #servicio-container > div.userInfo > div.contactinfo.row > div.user-email.col-sm-6{
+                    padding-left: unset !important;
+                    padding-right: unset !important;
+                    
+                }
+                #navbar-cart > div > div.cart-dropdown__list > div.cart-dropdown__footer > div.cart-total > span{
+                    font-size: 10px;
+                }
+                #navbar-cart > div > div.cart-dropdown__list > div.cart-dropdown__footer > div.cart-total{
+                    font-size: 11px;
+                }
+                
+                #servicio-container > div.userInfo > div.edit-icon-container > a.btn.btn-primary{
+                    font-size: 0.6rem !important;
+                }
+                #servicio-container > div.userInfo > div.edit-icon-container > a.btn.btn-outline-primary{
+                    font-size: 0.6rem !important;
+                }
+                #login > a > div > small{
+                    display: none;
+                }
+                body > div.order-container > section > div > div.col-md-12.col-sm-12.col-xs-12 > div > div.box-header.with-border > h3{
+                    font-size: 10px;
+                }
+                #order_placed{
+                    font-size: 8px;
+                    padding: 0.3rem;
+                }
+                body > div.order-container > section > div > div.col-md-12.col-sm-12.col-xs-12 > div > div.box-header.with-border > h3 > span:nth-child(3){
+                    font-size: 10px;
+                    position: absolute;
+                    top: 2px;
+                    right: 2px;
+                }
+            }
+            @media  screen and (min-width: 330px) and (max-width: 426px) {
+                body > div.order-container > section > div > div.col-md-12.col-sm-12.col-xs-12 > div > div.box-header.with-border > h3{
+                    font-size: 10px;
+                }
+                #order_placed{
+                    font-size: 8px;
+                    padding: 0.3rem;
+                }
+                body > div.order-container > section > div > div.col-md-12.col-sm-12.col-xs-12 > div > div.box-header.with-border > h3 > span:nth-child(3){
+                    font-size: 10px;
+                    position: absolute;
+                    top: 2px;
+                    right: 2px;
+                }
+                #navbar-cart > div > div.cart-dropdown__list{
+                    right: -60px;
+                }
+                #navbar-cart > div > div.cart-dropdown__list > div.cart-dropdown__footer > div.cart-total > span{
+                    font-size: 10px;
+                }
+            }
+            @media  screen and (min-width: 320px) and (max-width: 376px) {
+                    #servicio-container > div.userInfo > div.contactinfo.row {
+                    font-size: 11px;
+                }
+            }
+            @media  screen and (min-width: 700px) and (max-width: 768px) {
+                   
+                   #servicio-container > div.userInfo > div.contactinfo.row > div.user-email.col-sm-6{
+                       padding-left: unset !important;
+                       padding-right: unset !important;
+                   }
+                   #servicio-container > div.userInfo > div.contactinfo.row{
+                    padding-left: 20px;
+                    font-size: 12px;
+                   }
+                       
+            }
+            @media  screen and (min-width: 1023px) and (max-width: 2561px) {
+                #servicio-container > div.userInfo > div.contactinfo.row > div.user-email.col-sm-6{
+                    padding-left: 79px;
+                }
+                
+            }
+        </style>
+            
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+                <!-- Dynamic styles -->
+        <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+    // Create a script element
+    const customScript = document.createElement('script');
+    
+    // Set the script content with your logic
+    customScript.textContent = `
+                window.addEventListener('message', function (event) {
+            let preview_color = null;
+            // 
+            if (event.origin !== "https://websites.co.in") return;
+            // 
+            if (event?.data?.colors) {
+                preview_color = event.data.colors;
+                applyColors(preview_color);
+            }
+        },false);
+
+        function handleTemplateStyleDataFromAndroid(data) {
+            let preview_color_android = null;
+            // 
+            // 
+            // 
+            try {
+                    const parsedData = JSON.parse(data);
+                    if (parsedData?.colors) {
+                        preview_color_android = parsedData.colors;
+                        applyColors(preview_color_android);
+                    }
+                } catch (error) {
+                    console.error('Error parsing JSON data:', error);
+                }
+        }
+
+        function applyColors(colors){
+            // array to store CSS variable declarations
+            // Add primary color
+            const cssVariables = [];
+            if (colors.primary) {
+                cssVariables.push(\`--primary: \${colors.primary} !important;\`);
+                cssVariables.push(\`--hover_primary: \${colors.hover_primary || colors.primary} !important;\`);
+            }
+
+            // Add secondary color
+            if (colors.secondary) {
+                cssVariables.push(\`--secondary: \${colors.secondary} !important;\`);
+                cssVariables.push(\`--hover_secondary: \${colors.hover_secondary || colors.secondary} !important;\`);
+            }
+            // Join the array into a string and update CSS variables
+            document.getElementById('custom_style_customizations').textContent = \` :root {
+                \${cssVariables.join('\\n')}
+            } \`;
+        }
+    `;
+    
+    // Append the script element to the body
+    document.body.appendChild(customScript); 
+});
+
+</script>
+
+<style id="custom_style_customizations">
+</style>
+        
+ 
+        <script>
+            window.Laravel = {"csrfToken":"e2eYIpzXLRD80USpS3uMgnO9nlf7f43P6aCc4Qbf"};
+        </script>
+
+        <!-- Google Analytics -->
+        <script async> 
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-98172888-1', 'auto'); ga('send', 'pageview');
+            
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GH0QDVRYC5"></script>
+<script>
+     window.dataLayer = window.dataLayer || [];
+
+     function gtag() {
+     dataLayer.push(arguments);
+     }
+     gtag('js', new Date());
+
+     gtag('config', 'G-GH0QDVRYC5');
+     // gtag('config', 'UA-98172888-1');
+</script>
+ 
+
+     
+<html lang="en">
+<head>
+<script
+        id="fsc-api"
+        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.1/fastspring-builder.min.js"
+        type="text/javascript"
+        data-storefront="websites.onfastspring.com/popup-websites"
+        data-error-callback="fscErrorCallback"
+        data-popup-closed="fscPopupClosed">
+    </script>
+
+ <script>
+var s = {
+                'products' : [
+                                {
+                                    'path':book,
+                                    'quantity': 1
+                                }
+                ],
+                'checkout': true
+            }
+            fastspring.builder.push(s);
+        });
+</script> -->
+
+<!-- Flutterwave -->
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+
+        <!-- Facebook Pixel Code -->
+        <!-- <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','//connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '208608892996577');
+            fbq('track', 'PageView');
+        </script>
+        
+        <noscript>
+            <img height="1" width="1" style="display:none" 
+                src="//www.facebook.com/tr?id=208608892996577&ev=PageView&noscript=1"/>
+        </noscript> -->
+
+        <!-- Google Ads -->
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({
+                      google_ad_client: "ca-pub-9893140156928974",
+                      enable_page_level_ads: true
+                 });
+            </script>
+        
+        
+            </head>
+            <Header>  
+                
+                
+                
+                <a href="index.html" class="logo">
+            
+            <img class="Green Dollar-logo" src="1.png" alt=" Green Dollar" width="100" height="50">   </a>
+  
+                
+                
+                
+                
+                
+                
+                
+                
+              
+
+    <body  style="    background-color: lime ;  ">
+        
+        <input type="hidden" class="__website_id" id="website_id" value="1481220">
+        
+                    <input type="hidden" id="businessdetails_id" value="1481664">
+        
+        
+        <script type='application/ld+json'>
+    {
+        "@context": "http://www.schema.org",
+        "@type": "LocalBusiness",
+        "name": "Eeduh Forex Trade",
+        "url": "https://eeduhforextradeinvestments.websites.co.in",
+        "sameAs": [
+            ""
+        ],
+        "priceRange":"$$$",
+         "telephone":"+254*********0629",    
+        "logo": {
+            "@type": "ImageObject",
+            "caption": "Eeduh Forex Trade"
+            , "contentUrl": "https://eeduhforextradeinvestments.websites.co.in/files/1481220/business/logo/logo-1583528105.jpeg"         },
+        "image": {
+            "@type": "ImageObject",
+            "caption": "Eeduh Forex Trade",
+             "contentUrl": "https://eeduhforextradeinvestments.websites.co.in/files/1481220/business/logo/logo-1583528105.jpeg",             "url": "https://eeduhforextradeinvestments.websites.co.in"
+        },
+        "description": "",
+        "address": {
+            "@type": "PostalAddress",
+             "streetAddress": "Dallas Texas",              "addressLocality": "Dallas",              "addressRegion": "Texas",              "postalCode": "10500",              "addressCountry": "United States"         },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Eeduh Forex Trade"
+            }
+        },
+                    "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "32.7762719",
+                "longitude": "-96.7968559"
+            },
+                            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+                }
+            ],
+                 "email": "e**************************@g*****.com",                     "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+254*********0629",
+                "contactType": "sales"
+            }
+            }
+</script>        
+        <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://eeduhforextradeinvestments.websites.co.in",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://eeduhforextradeinvestments.websites.co.in/search/all/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+        
+       
+
+          
+</header>
+
+        
+                                    <span class="breadcrumb-area-item">
+                                                                                 
+                                                                            </span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/", 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [
+          { 
+            "@type": "ListItem", 
+            "position": "1", 
+            "item": { 
+              "@id": "https://eeduhforextradeinvestments.websites.co.in", 
+              "name": "Home" 
+            } 
+          },
+          { 
+            "@type": "ListItem", 
+            "position": "2", 
+            "item": { 
+              "@id": "https://eeduhforextradeinvestments.websites.co.in/updates/list", 
+              "name": "Updates" 
+            } 
+          },
+          { 
+            "@type": "ListItem", 
+            "position": "3", 
+            "item": { 
+              "@id": "https://eeduhforextradeinvestments.websites.co.in/update/deposit-payment-0ptions-m-pesa/2035567", 
+              "name": "Deposit Payment 0ptions M-pesa" 
+            } 
+          }
+        ]
+      }
+</script>    </section>
+
+                  </div>
+            </div>
+        </div>
+    
+    
+    <section class="update-details-page">
+        <div class="container">
+                            <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+
+                            
+                            
+                            
+                            <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "BlogPosting",
+                "headline": "Deposit Payment 0ptions M-pesa",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://eeduhforextradeinvestments.websites.co.in/files/1481220/business/logo/logo-1583528105.jpeg"
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://eeduhforextradeinvestments.websites.co.in/update/deposit-payment-0ptions-m-pesa/2035567"
+                },
+                "description": "    M-PESA PAYMENT How to deposit 🔹Go to Lipa na Mpesa  🔸Paybill 247247 🔹Account Number 0*********0629 🔸 Enter the amount you want to deposit in Ksh 🔹 Then your PIN and complete the payment 🔸Confirmed...",
+                "datePublished": "2023-08-07 03:02:49",
+                "dateModified": "2023-08-21 10:23:50",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Eeduh Forex Trade"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Eeduh Forex Trade",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://eeduhforextradeinvestments.websites.co.in/files/1481220/business/logo/logo-1583528105.jpeg"
+                    }
+                },
+                "articleSection": [
+                                    ]
+            }
+        </script>
+    
+                            
+                            <div class="col-md col-sm-12 py-5 my-4">
+                                <div class="update-content-column-wrap" style="position: sticky; position: -webkit-sticky; top: 90px;">
+                                    <div class="update-content-column">
+                                        <div class="update-content">
+                                            
+                                            <div class="update-title-wrap mb-5">
+                                                <h1 class="update-title wow fadeInUp" data-wow-delay="0.2s">
+                                                                                                        Deposit Payment  M-pesa
+                                                </h1>
+                                                <div class="update-meta text-right">
+                                                    <p class="wow fadeInUp" data-wow-delay="0.2s">
+                                                                                                                By Green Dollar
+                                                        <br>
+                                                        
+                                                        Mon, 07-Aug-2024, 03:02
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="update-description summernote-content-wrapper mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                                                                                                                                                    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p><img data-filename="1200x630wa.png" style="width: 25%;" src="https://eeduhforextradeinvestments.websites.co.in/files/1481220/updates/2035567/deposit-payment-0ptions-m-pesa-0.39253300%201691357569.png"></p>
+<h5>M-PESA PAYMENT</h5>
+<h6>How to deposit</h6>
+<h6>🔹Go to M-pesa Send Money</h6>
+<h6>🔸Enter the Green Dollar`s Agent Phone  Number</h6>
+<h6>🔹Phone Number 0758788907</h6>
+<h6>🔸 Enter the amount you want to deposit as low as Ksh 1000</h6>
+<h6>🔹 Then enter your Mpesa Pin and complete the payment</h6>
+<h6>🔸Confirmed Agent name : Nahashon Njinja                                                                 </h6>
+<p><br></p>
+ <h6>Thank You for investing with the Green Dollar </h6>
+
+
+                                                                                            </div>
+
+                                            
+                                                                                        
+                                            
+                                                                                            <div class="event-custom-button wow fadeInUp" data-wow-delay="0.4s">
+                                                    <p class="text-center my-4" style="color: black;">
+                                                        <a title="Back/Previous" 
+                                                            href=" index.html"  
+                                                            class="theme-outline-btn green-outline-dark-text shadow"
+                                                            target="_blank" 
+                                                            rel="nofollow noopener">
+                                                            Back/Previous
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                                                                        
+                                                                       
+
+
+
+
+
+
+        <div class="popup">
+    <div id="popup" class="popup__content">
+        <div id="popup__close">
+            &#10005;
+        </div>
+                
+        <p class="popup__text" style="color: lime;"> The Agent Number is: 0758788907<br>Agent name:Nahashon Njinja</p>
+        
+        <div class="hide popup__button__div">
+            <a  href="#" class="popup__button" style="color: yellowgreen;"> Send Money</a>
+        </div>
+    </div>
+</div>   </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- alerts -->
+        
+        <!--Search Modal Structure -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="search-modal">Search</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="search-form">
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group input-wrap">
+                                <input type="text" 
+                                    class="form-control br-none" 
+                                    name="query" 
+                                    id="query" 
+                                    placeholder="Please Enter Search Term" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ml-4 py-4">
+
+                        <div class="col-md-4 col-sm-12 custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="products" value="products" />
+                            
+                                                            <label class="custom-control-label" for="products">Services</label>
+                                                    </div>
+
+                        <div class="col-md-4 col-sm-12 custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="updates" value="updates" />
+                            
+                                                            <label class="custom-control-label" for="updates">Updates</label>
+                                                    </div>
+
+                        <div class="col-md-4 col-sm-12 custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="media" value="media" />
+                            
+                                                            <label class="custom-control-label" for="media">Media</label>
+                                                    </div>
+
+                        <div class="col-md-4 col-sm-12 custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="pages" value="pages" />
+                            <label class="custom-control-label" for="pages">Pages</label>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="all" value="all" checked/>
+                            <label class="custom-control-label" for="all">All</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center my-2">
+                            <a title="search" 
+                                id="btn-search" 
+                                class="theme-outline-btn green-outline-dark-text mx-auto">
+                                Search <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+        
+        <div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="appointment-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                
+                <button type="button" title="colse inquiry modal" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 18px; right: 20px; cursor: pointer; z-index: 9999;">
+                    <i aria-hidden="true" class="fas fa-times"></i>
+                </button>
+
+                <ul class="nav nav-tabs" id="heroTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="appointment-tab" data-toggle="tab" href="#appointment" role="tab" aria-controls="appointment" aria-selected="true">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="enquiry-tab" data-toggle="tab" href="#enquiry" role="tab" aria-controls="enquiry" aria-selected="false">Enquiry</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="heroTabContent">
+                    
+                    <div class="tab-pane fade show active" id="appointment" role="tabpanel" aria-labelledby="appointment-tab">
+                        <div style="overflow: hidden;">
+                            
+                            <div class="app-timings m-4 animated slideInRight" id="app-timings" style="display: block;">
+                                <div class="main-app-wrap">
+                                    <div class="app-heading-wrap">
+                                        <h6 class="app-heading"><span>Select a date and time slot to book an Appointment</span></h6>
+                                    </div>
+                                    <div class="app-date-block-wrap">
+                                        <p>Date Of Appointment</p>
+                                        <div class="app-date-block">
+                                            <button class="btn btn-primary app-date-previous" id="app-date-previous">
+                                                <i class="fas fa-angle-left"></i>
+                                            </button>
+                                                <label for="app-date">
+                                                    <input type="text" name="app-date" id="app-date" disabled>
+                                                </label>
+                                            <button class="btn btn-primary app-date-next" id="app-date-next">
+                                                <i class="fas fa-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="app-time-slots-container" id="app-time-slots-container">
+                                        
+                                        <div class="app-time-slots-wrap morning-slots">
+                                            <div class="app-time-slots-heading">
+                                                <i class="fas fa-cloud-sun pr-2"></i>
+                                                Morning
+                                            </div>
+                                            <ul class="time-slots" id="populate_morning_slots">
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="app-time-slots-wrap afternoon-slots">
+                                            <div class="app-time-slots-heading">
+                                                <i class="fas fa-sun pr-2"></i>
+                                                Afternoon
+                                            </div>
+                                            <ul class="time-slots" id="populate_afternoon_slots">
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="app-time-slots-wrap evening-slots">
+                                            <div class="app-time-slots-heading">
+                                                <i class="fas fa-moon pr-2"></i>
+                                                Evening
+                                            </div>
+                                            <ul class="time-slots" id="populate_evening_slots">
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div align="center" class="hide" id="app-time-slots-container-closed">
+                                        <h3><strong>closed</strong></h3>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            
+                            <div class="app-form m-4 animated slideInRight" id="app-form" style="display: none;">
+                                <h5 class="modal-title text-center" id="appointment-modal">
+                                    <div class="back-to-app-form" id="back_to_app_form" style="position: absolute; top: 0px; left: 0px; cursor: pointer;">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </div>
+                                    <span id="appointment-modal-title"></span>
+                                    <!--button type="button" title="colse inquiry modal" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 15px; right: 15px; cursor: pointer;">
+                                        
+                                        <i class="fas fa-times"></i>
+                                    </button -->
+                                </h5>
+                                
+                                <form class="p-3" role="form" id="book-appointment-form" style="position: relative;">
+                                    <input type="hidden" name="_token" value="e2eYIpzXLRD80USpS3uMgnO9nlf7f43P6aCc4Qbf">
+                                
+                                    <div id="book-appointment-form-response" class="alert alert-dismissible fade hide" role="alert">
+                                        <span id="sendMesssageEnquiryForm-status"></span>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                
+                                    <div class="row form-group input-wrap">
+                                        <label for="appointment_name" class="sr-only">Name</label>
+                                        <input type="text" class="form-control input-reset br-none" name="name" id="appointment_name" placeholder="Name" required>
+                                    </div>
+                                
+                                    <div class="row form-group input-wrap">
+                                        <label for="appointment_email" class="sr-only">Email</label>
+                                        <input type="email" class="form-control input-reset br-none" name="email" id="appointment_email" placeholder="Email" required>
+                                    </div>
+                                
+                                    <div class="row">
+                                        <div class="form-group input-wrap col-md-5 col-sm-12">
+                                            <label for="appointment_phonecode" class="mr-md-2 sr-only">Phone Code</label>
+                                            <select id="appointment_phonecode" name="phonecode" class="form-control br-none" required>
+                                            </select>
+                                        </div>
+                                
+                                        <div class="form-group input-wrap col-md-7 col-sm-12 pl-md-0">
+                                            <label for="appointment_phone" class="sr-only">Phone</label>
+                                            <input type="text" class="form-control input-reset br-none" name="phone" id="appointment_phone" placeholder="Phone Number" required>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row form-group input-wrap">
+                                        <label for="appointment_message" class="sr-only">Message</label>
+                                        <textarea class="form-control input-reset br-none" name="message" id="appointment_message" rows="3" placeholder="Message" required></textarea>
+                                    </div>
+                                
+                                    <div class="row form-group">
+                                        <div class="recaptcha">
+                                            <div id="g-recaptcha-widget1" class="recaptcha-scale"></div>
+                                        </div>
+                                    </div>
+                
+                                    <input type="hidden" name="b_date_message" id="b_date_message" value="">
+                                    <input type="hidden" name="b_time_message" id="b_time_message" value="">
+                                
+                                    <input type="hidden" name="user_id" value="2507797">
+                                
+                                    <input type="hidden" name="businessdetails_id" value="1481664">
+                                
+                                    <input type="hidden" name="website_id" value="1481220">
+                                
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="book-appointment" class="theme-outline-btn green-outline-dark-text" style="cursor: pointer;">
+                                            Book
+                                            <i id="appointment_send" class="show fas fa-paper-plane"></i>
+                                            <i id="appointment_loader" class="hide fas fa-circle-notch fa-spin"></i>
+                                        </button>
+                                    </div>
+                                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="tab-pane fade" id="enquiry" role="tabpanel" aria-labelledby="enquiry-tab">
+                        <h5 class="text-center py-3">Enquiry</h5>
+                        <!-- Form -->
+                        <form class="p-3" role="form" id="sendMessageForm" style="position: relative;">
+                            <input type="hidden" name="_token" value="e2eYIpzXLRD80USpS3uMgnO9nlf7f43P6aCc4Qbf">
+                        
+                            <div id="sendMessageForm-response" class="row alert alert-dismissible fade hide" role="alert">
+                                <span id="sendMesssageForm-status"></span>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        
+                            <div class="row form-group input-wrap">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" class="form-control input-reset br-none" name="name" id="name" placeholder="Name" required>
+                            </div>
+                        
+                            <div class="row form-group input-wrap">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" class="form-control input-reset br-none" name="email" id="email" placeholder="Email" required>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="form-group input-wrap col-md-5 col-sm-12">
+                                    <label for="phonecode" class="mr-md-2 sr-only">Phone Code</label>
+                                    <select id="phonecode" name="phonecode" class="form-control br-none" required>
+                                    </select>
+                                </div>
+                        
+                                <div class="form-group input-wrap col-md-7 col-sm-12">
+                                    <label for="phone" class="sr-only">Phone</label>
+                                    <input type="text" class="form-control input-reset br-none" name="phone" id="phone" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                        
+                            <div class="row form-group input-wrap">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea class="form-control input-reset br-none" name="message" id="message" rows="3" placeholder="Message" required></textarea>
+                            </div>
+                        
+                            <div class="row form-group">
+                                <div class="recaptcha">
+                                    <div id="g-recaptcha-widget2" class="recaptcha-scale" style="transform: scale(0.9);"></div>
+                                </div>
+                            </div>
+                        
+                            <input type="hidden" name="user_id" value="2507797">
+                        
+                            <input type="hidden" name="businessdetails_id" value="1481664">
+                        
+                            <input type="hidden" name="website_id" value="1481220">
+                        
+                            <div class="form-group text-center">
+                                <button type="submit" id="sendMessage" class="theme-outline-btn green-outline-light-text" style="cursor: pointer;">
+                                    Submit
+                                    <i id="inquiry_send" class="show fas fa-paper-plane"></i>
+                                    <i id="inquiry_loader" class="hide fas fa-circle-notch fa-spin"></i>
+                                </button>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </div>
+
+                                                                                                <input type="hidden" name="appointment_slots" id="slot_Monday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Monday" data-slot-is-closed="0">
+                                            <input type="hidden" name="appointment_slots" id="slot_Tuesday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Tuesday" data-slot-is-closed="0">
+                                            <input type="hidden" name="appointment_slots" id="slot_Wednesday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Wednesday" data-slot-is-closed="0">
+                                            <input type="hidden" name="appointment_slots" id="slot_Thursday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Thursday" data-slot-is-closed="0">
+                                            <input type="hidden" name="appointment_slots" id="slot_Friday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Friday" data-slot-is-closed="0">
+                                            <input type="hidden" name="appointment_slots" id="slot_Saturday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Saturday" data-slot-is-closed="0">
+                                            <input type="hidden" name="appointment_slots" id="slot_Sunday" data-start-time="07:00" data-end-time="23:00" data-slot-day="Sunday" data-slot-is-closed="0">
+                                    
+                
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- order Modal -->
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="order-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="order-modal">
+                            <span id="title-product-btn-value"></span> <span id="title-product-name"></span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </h5>
+                        <!-- Form -->
+<form class="p-3" role="form" id="orderForm">
+    <input type="hidden" name="_token" value="e2eYIpzXLRD80USpS3uMgnO9nlf7f43P6aCc4Qbf">
+
+    <div id="placeorder-response" class="alert alert-dismissible fade hide" role="alert">
+        <span id="placeOrder-status"></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="row form-group input-wrap">
+        
+        <input type="text" class="form-control input-reset br-none" name="name" id="order_name" placeholder="Name">
+    </div>
+
+    <div class="row form-group input-wrap">
+        
+        <input type="email" class="form-control input-reset br-none" name="email" id="order_email" placeholder="Email">
+    </div>
+
+    <div class="row">
+        <div class="form-group input-wrap col-md-5 col-sm-12">
+            
+            <select id="order_phonecode" name="order_phonecode" class="form-control br-none">
+            </select>
+        </div>
+
+        <div class="form-group input-wrap col-md-7 col-sm-12 pl-md-0">
+            
+            <input type="text" class="form-control input-reset br-none" name="phone" id="order_phone" placeholder="Phone Number">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group input-wrap col-md-6">
+            
+            <input class="form-control br-none" id="order_quantity" name="quantity" type="number" min="1" value="1" placeholder="Quantity">
+        </div>
+
+        <div class="form-group input-wrap col-md-6">
+            
+            <input class="form-control br-none" id="order_unit" name="unit" type="text" placeholder="Unit" readonly>
+        </div>
+    </div>
+
+    <div class="row form-group input-wrap">
+        
+        <textarea class="form-control input-reset br-none" name="message" id="order_message" rows="3" placeholder="Message"></textarea>
+    </div>
+
+    <div class="row form-group">
+        <div class="recaptcha">
+            <div id="g-recaptcha-widget7" class="recaptcha-scale" style="transform: scale(0.9);"></div>
+        </div>
+    </div>
+
+    <input type="hidden" name="product_id" id="product_id" value="">
+
+    <input type="hidden" name="user_id" id="user_id" value="2507797">
+
+    <input type="hidden" name="businessdetails_id" id="businessdetails_id" value="1481664">
+
+    <input type="hidden" name="website_id" id="website_id" value="1481220">
+
+    <div class="form-group text-center">
+        <a id="placeOrder" title="place order" class="theme-outline-btn green-outline-light-text" style="cursor: pointer;">
+            <span id="default-btn-value"></span>
+            <i id="placeorder_send" class="show fas fa-paper-plane"></i>
+            <i id="placeorder_loader" class="hide fas fa-circle-notch fa-spin"></i>
+        </a>
+    </div>
+
+</form>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="report-box" class="report-box">
+
+    <div class="report-box-header">
+        <h4>Safety and Abuse Reporting</h4>
+        <div id="report-close-btn" class="report-close-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="report-box-body">
+        <form class="report-form" role="form" id="report-form">
+            <input type="hidden" name="_token" value="e2eYIpzXLRD80USpS3uMgnO9nlf7f43P6aCc4Qbf">
+
+            <div class="options-wrap">
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Harassment and Cyberbullying" class="option" id="reason1" required>
+                    <label for="reason1">Harassment and Cyberbullying</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Impersonation" class="option" id="reason2" required>
+                    <label for="reason2">Impersonation</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Violent Threats" class="option" id="reason3" required>
+                    <label for="reason3">Violent Threats</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Hate Speech Against a Protected Group" class="option" id="reason4" required>
+                    <label for="reason4">Hate Speech Against a Protected Group</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Spam and Scams" class="option" id="reason5" required>
+                    <label for="reason5">Spam and Scams</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="none" class="option" id="reason6" required>
+                    <label for="reason6">None of these are my issue</label>
+                </div>
+                <div class="option-wrap extra-field" id="extra-field">
+                    <label for="report-reason" class="sr-only">reason to report</label>
+                    <input type="text" class="report-reason" name="report-custom-reason" placeholder="reason to report">
+                </div>
+            </div>
+
+            <label for="report-email" class="sr-only">your email</label>
+            <input type="email" class="report-email" name="report-email" id="report-email" placeholder="your email*" required>
+            
+            <label for="report-msg" class="sr-only">message</label>
+            <textarea class="report-msg" 
+                name="report-msg" 
+                id="report-msg" 
+                rows="3" 
+                placeholder="message*" required></textarea>
+        
+            <input type="hidden" id="report-msg_title" name="msg_title" value="[Websites.co.in] Website Abuse Reported">
+            <input type="hidden" id="report-website_id" name="report-website_id" value="1481220">
+            <input type="hidden" id="report-website_url" name="report-website_url" value="https://eeduhforextradeinvestments.websites.co.in">
+        
+            <button type="submit" class="report-send-btn">
+                Report this website
+            </button>
+        </form>
+        
+        <div id="report-success-box" class="report-success-box">
+            <h4>Thanks for being awesome!</h4>
+            <p>We appreciate you contacting us. Our support will get back in touch with you soon!</p>
+            <p>Have a great day!</p>
+        </div>
+
+        <div class="confirmation-box" id="confirmation-box">
+            <h3 class="c-title">Are you sure you want to report abuse against this website?</h3>
+            <div class="c-body">
+                <p>Please note that your query will be processed only if we find it relevant. Rest all requests will be ignored. If you need help with the website, please login to your dashboard and connect to support</p>
+            </div>
+            <div class="c-footer">
+                <a href="#" id="cancel-report-abuse" class="c-btn btn-cancel" onclick="event.preventDefault();">Cancel</a>
+                <a href="#" id="confirm-report-abuse" class="c-btn btn-confirm" onclick="event.preventDefault();">Confirm</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+        
+        <div id="custom-toast-body"></div>
+
+        
+        <div class="pqv-bg " id="pqv-popup-bg"></div>
+
+
+<div class="pqv-wrap " id="pqv-popup">
+    
+    <div class="pqv-container">
+        <div class="pqv-content">
+            <div class="lightbox-content">
+                <div class="product-quick-view-container">
+                    <button type="button" class="pqv-close pqv-close-btn" id="pqv-popup-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
+
+                    <div class="product-info-col" id="pqv-data">
+                        <div class="product-info">
+                            <h4 class="product-name" id="pqv-data-pname"></h4>
+                            <div class="product-price-row">
+                                <p class="p-price">
+                                    <span id="pqv-data-pcurrency" class="_pqv_currency"></span>
+                                    <span id="pqv-data-pprice" class="_pqv_price"></span>
+                                </p>
+                            </div>
+                            <div class="product-variants-row" id="pqv-choices-area"></div>
+
+                            <div class="product-action-row">
+                                <p class="_pqv_error_msg" style="color: red;"></p>
+                                <input type="number" min="1" value="1" name="pquantity" id="pqv-pquantity">
+                            </div>
+
+                            <div class="product-categories-row" style="display: none;">
+                                <p class="p-cat-label">Category:</p>
+                                <a href="#" class="p-cat" id="pqv-data-pcategory"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>;
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/common/js/jquery-3.3.1.min.js"></script>
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/common/js/jquery.cookie.js"></script>
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/common/js/popup-on-cookie.js"></script>
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/common/js/custom-toast.js"></script>
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/service-pro/js/vendor/modernizr-custom.js"></script>
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/common/js/select2.full.min.js"></script>
+        
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/service-pro/js/vendor/bootstrap.bundle.min.js"></script>
+        
+        
+        <script type="text/javascript" src="https://eeduhforextradeinvestments.websites.co.in/service-pro/js/gRecaptchaExplicitRender.js">
+        </script>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+        
+        <script type="text/javascript" src="https://eeduhforextradeinvestments.websites.co.in/common/js/appointment-form.js?v=172060856"></script>
+
+        
+        <script src="https://eeduhforextradeinvestments.websites.co.in/service-pro/js/main.js?v=1449947006"></script>
+
+        
+        <script type="text/javascript" src="https://eeduhforextradeinvestments.websites.co.in/common/js/clicks.js"></script>
+
+        
+        <script type="text/javascript" src="https://eeduhforextradeinvestments.websites.co.in/common/js/jquery.smooth-scroll.js"></script>
+
+        
+        <script type="text/javascript" src="https://eeduhforextradeinvestments.websites.co.in/common/js/page-scroll.js"></script>
+
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+        
+                
+        
+        <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+        try {
+            navigator.serviceWorker.register("https://eeduhforextradeinvestments.websites.co.in/service.worker.js?v=131797475").then(function(
+                registration) {
+                // Registration was successful
+                console.log('Laravel PWA: ServiceWorker registration successful with scope: ', registration
+                    .scope);
+            }, function(err) {
+                // registration failed :(
+                console.log('Laravel PWA: ServiceWorker registration failed: ', err);
+            });
+        } catch (error) {
+            console.log('service worker failed');
+        }
+    }
+</script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+        <script 
+        src="//www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        >
+        </script>
+
+        
+        
+        
+            <script src="//www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script>
+        var sitekey = '6Lf8FTIUAAAAAEH7vOdPzp19f0klLdJJkx0K4_CU';
+        var widgets = ['regi-captcha-widget'];
+
+        var onloadCallback = function () {
+            $.each(widgets, function (index, value) {
+                if ($('#' + value).length) {
+                    var grecap_id = grecaptcha.render(value, {
+                        'sitekey': sitekey
+                    });
+
+                    $('#' + value).attr('data-grecapid', grecap_id);
+                }
+            });
+        };
+
+        var form = document.getElementById('regi-form');
+        form.addEventListener("submit", function(event){
+            if (grecaptcha.getResponse() === '') {                            
+                event.preventDefault();
+                // alert('Please complete captcha verification.');
+                $('#captcha-msg').text('Please complete captcha verification.');
+            } else {
+                $('#captcha-msg').text('');
+            }
+        }
+        , false);
+    </script>
+
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+            var phoneCodeData = JSON.parse('[{"id":"+93","text":"+93 (AF)"},{"id":"+0","text":"+0 (AX)"},{"id":"+355","text":"+355 (AL)"},{"id":"+213","text":"+213 (DZ)"},{"id":"+1684","text":"+1684 (AS)"},{"id":"+376","text":"+376 (AD)"},{"id":"+244","text":"+244 (AO)"},{"id":"+1264","text":"+1264 (AI)"},{"id":"+672","text":"+672 (AQ)"},{"id":"+1268","text":"+1268 (AG)"},{"id":"+54","text":"+54 (AR)"},{"id":"+374","text":"+374 (AM)"},{"id":"+297","text":"+297 (AW)"},{"id":"+61","text":"+61 (AU)"},{"id":"+43","text":"+43 (AT)"},{"id":"+994","text":"+994 (AZ)"},{"id":"+1242","text":"+1242 (BS)"},{"id":"+973","text":"+973 (BH)"},{"id":"+880","text":"+880 (BD)"},{"id":"+1246","text":"+1246 (BB)"},{"id":"+375","text":"+375 (BY)"},{"id":"+32","text":"+32 (BE)"},{"id":"+501","text":"+501 (BZ)"},{"id":"+229","text":"+229 (BJ)"},{"id":"+1441","text":"+1441 (BM)"},{"id":"+975","text":"+975 (BT)"},{"id":"+591","text":"+591 (BO)"},{"id":"+387","text":"+387 (BA)"},{"id":"+267","text":"+267 (BW)"},{"id":"+47","text":"+47 (BV)"},{"id":"+55","text":"+55 (BR)"},{"id":"+246","text":"+246 (IO)"},{"id":"+673","text":"+673 (BN)"},{"id":"+359","text":"+359 (BG)"},{"id":"+226","text":"+226 (BF)"},{"id":"+257","text":"+257 (BI)"},{"id":"+855","text":"+855 (KH)"},{"id":"+237","text":"+237 (CM)"},{"id":"+1","text":"+1 (CA)"},{"id":"+238","text":"+238 (CV)"},{"id":"+1345","text":"+1345 (KY)"},{"id":"+236","text":"+236 (CF)"},{"id":"+235","text":"+235 (TD)"},{"id":"+56","text":"+56 (CL)"},{"id":"+86","text":"+86 (CN)"},{"id":"+61","text":"+61 (CX)"},{"id":"+672","text":"+672 (CC)"},{"id":"+57","text":"+57 (CO)"},{"id":"+269","text":"+269 (KM)"},{"id":"+0","text":"+0 (CG)"},{"id":"+0","text":"+0 (CD)"},{"id":"+682","text":"+682 (CK)"},{"id":"+506","text":"+506 (CR)"},{"id":"+225","text":"+225 (CI)"},{"id":"+385","text":"+385 (HR)"},{"id":"+53","text":"+53 (CU)"},{"id":"+357","text":"+357 (CY)"},{"id":"+420","text":"+420 (CZ)"},{"id":"+242","text":"+242 (CD)"},{"id":"+243","text":"+243 (CD)"},{"id":"+45","text":"+45 (DK)"},{"id":"+253","text":"+253 (DJ)"},{"id":"+1767","text":"+1767 (DM)"},{"id":"+1809","text":"+1809 (DO)"},{"id":"+1829","text":"+1829 (DO1)"},{"id":"+1849","text":"+1849 (DO2)"},{"id":"+670","text":"+670 (TP)"},{"id":"+593","text":"+593 (EC)"},{"id":"+20","text":"+20 (EG)"},{"id":"+503","text":"+503 (SV)"},{"id":"+240","text":"+240 (GQ)"},{"id":"+291","text":"+291 (ER)"},{"id":"+372","text":"+372 (EE)"},{"id":"+251","text":"+251 (ET)"},{"id":"+61","text":"+61 (XA)"},{"id":"+500","text":"+500 (FK)"},{"id":"+298","text":"+298 (FO)"},{"id":"+679","text":"+679 (FJ)"},{"id":"+358","text":"+358 (FI)"},{"id":"+33","text":"+33 (FR)"},{"id":"+594","text":"+594 (GF)"},{"id":"+689","text":"+689 (PF)"},{"id":"+262","text":"+262 (TF)"},{"id":"+241","text":"+241 (GA)"},{"id":"+220","text":"+220 (GM)"},{"id":"+995","text":"+995 (GE)"},{"id":"+49","text":"+49 (DE)"},{"id":"+233","text":"+233 (GH)"},{"id":"+350","text":"+350 (GI)"},{"id":"+30","text":"+30 (GR)"},{"id":"+299","text":"+299 (GL)"},{"id":"+1473","text":"+1473 (GD)"},{"id":"+590","text":"+590 (GP)"},{"id":"+1671","text":"+1671 (GU)"},{"id":"+502","text":"+502 (GT)"},{"id":"+44","text":"+44 (XU)"},{"id":"+224","text":"+224 (GN)"},{"id":"+245","text":"+245 (GW)"},{"id":"+592","text":"+592 (GY)"},{"id":"+509","text":"+509 (HT)"},{"id":"+0","text":"+0 (HM)"},{"id":"+504","text":"+504 (HN)"},{"id":"+852","text":"+852 (HK)"},{"id":"+36","text":"+36 (HU)"},{"id":"+354","text":"+354 (IS)"},{"id":"+91","text":"+91 (IN)"},{"id":"+62","text":"+62 (ID)"},{"id":"+98","text":"+98 (IR)"},{"id":"+964","text":"+964 (IQ)"},{"id":"+353","text":"+353 (IE)"},{"id":"+972","text":"+972 (IL)"},{"id":"+39","text":"+39 (IT)"},{"id":"+1876","text":"+1876 (JM)"},{"id":"+81","text":"+81 (JP)"},{"id":"+44","text":"+44 (XJ)"},{"id":"+962","text":"+962 (JO)"},{"id":"+7","text":"+7 (KZ)"},{"id":"+254","text":"+254 (KE)"},{"id":"+686","text":"+686 (KI)"},{"id":"+0","text":"+0 (KP)"},{"id":"+850","text":"+850 (KP)"},{"id":"+82","text":"+82 (KR)"},{"id":"+965","text":"+965 (KW)"},{"id":"+996","text":"+996 (KG)"},{"id":"+856","text":"+856 (LA)"},{"id":"+371","text":"+371 (LV)"},{"id":"+961","text":"+961 (LB)"},{"id":"+266","text":"+266 (LS)"},{"id":"+231","text":"+231 (LR)"},{"id":"+218","text":"+218 (LY)"},{"id":"+423","text":"+423 (LI)"},{"id":"+370","text":"+370 (LT)"},{"id":"+352","text":"+352 (LU)"},{"id":"+853","text":"+853 (MO)"},{"id":"+389","text":"+389 (MK)"},{"id":"+261","text":"+261 (MG)"},{"id":"+265","text":"+265 (MW)"},{"id":"+60","text":"+60 (MY)"},{"id":"+960","text":"+960 (MV)"},{"id":"+223","text":"+223 (ML)"},{"id":"+356","text":"+356 (MT)"},{"id":"+44","text":"+44 (XM)"},{"id":"+692","text":"+692 (MH)"},{"id":"+596","text":"+596 (MQ)"},{"id":"+222","text":"+222 (MR)"},{"id":"+230","text":"+230 (MU)"},{"id":"+269","text":"+269 (YT)"},{"id":"+52","text":"+52 (MX)"},{"id":"+691","text":"+691 (FM)"},{"id":"+373","text":"+373 (MD)"},{"id":"+377","text":"+377 (MC)"},{"id":"+976","text":"+976 (MN)"},{"id":"+0","text":"+0 (ME)"},{"id":"+1664","text":"+1664 (MS)"},{"id":"+212","text":"+212 (MA)"},{"id":"+258","text":"+258 (MZ)"},{"id":"+95","text":"+95 (MM)"},{"id":"+264","text":"+264 (NA)"},{"id":"+674","text":"+674 (NR)"},{"id":"+977","text":"+977 (NP)"},{"id":"+599","text":"+599 (AN)"},{"id":"+31","text":"+31 (NL)"},{"id":"+687","text":"+687 (NC)"},{"id":"+64","text":"+64 (NZ)"},{"id":"+505","text":"+505 (NI)"},{"id":"+227","text":"+227 (NE)"},{"id":"+234","text":"+234 (NG)"},{"id":"+683","text":"+683 (NU)"},{"id":"+672","text":"+672 (NF)"},{"id":"+1670","text":"+1670 (MP)"},{"id":"+47","text":"+47 (NO)"},{"id":"+968","text":"+968 (OM)"},{"id":"+92","text":"+92 (PK)"},{"id":"+680","text":"+680 (PW)"},{"id":"+970","text":"+970 (PS)"},{"id":"+507","text":"+507 (PA)"},{"id":"+675","text":"+675 (PG)"},{"id":"+595","text":"+595 (PY)"},{"id":"+51","text":"+51 (PE)"},{"id":"+63","text":"+63 (PH)"},{"id":"+872","text":"+872 (PN)"},{"id":"+48","text":"+48 (PL)"},{"id":"+351","text":"+351 (PT)"},{"id":"+1787","text":"+1787 (PR)"},{"id":"+974","text":"+974 (QA)"},{"id":"+242","text":"+242 (CG)"},{"id":"+262","text":"+262 (RE)"},{"id":"+40","text":"+40 (RO)"},{"id":"+7","text":"+7 (RU)"},{"id":"+250","text":"+250 (RW)"},{"id":"+290","text":"+290 (SH)"},{"id":"+1869","text":"+1869 (KN)"},{"id":"+1758","text":"+1758 (LC)"},{"id":"+508","text":"+508 (PM)"},{"id":"+1784","text":"+1784 (VC)"},{"id":"+0","text":"+0 (BL)"},{"id":"+0","text":"+0 (MF)"},{"id":"+684","text":"+684 (WS)"},{"id":"+378","text":"+378 (SM)"},{"id":"+239","text":"+239 (ST)"},{"id":"+966","text":"+966 (SA)"},{"id":"+221","text":"+221 (SN)"},{"id":"+381","text":"+381 (RS)"},{"id":"+248","text":"+248 (SC)"},{"id":"+232","text":"+232 (SL)"},{"id":"+65","text":"+65 (SG)"},{"id":"+1","text":"+1 (SX)"},{"id":"+421","text":"+421 (SK)"},{"id":"+386","text":"+386 (SI)"},{"id":"+44","text":"+44 (XG)"},{"id":"+677","text":"+677 (SB)"},{"id":"+252","text":"+252 (SO)"},{"id":"+27","text":"+27 (ZA)"},{"id":"+0","text":"+0 (GS)"},{"id":"+211","text":"+211 (SS)"},{"id":"+34","text":"+34 (ES)"},{"id":"+94","text":"+94 (LK)"},{"id":"+249","text":"+249 (SD)"},{"id":"+597","text":"+597 (SR)"},{"id":"+47","text":"+47 (SJ)"},{"id":"+268","text":"+268 (SZ)"},{"id":"+46","text":"+46 (SE)"},{"id":"+41","text":"+41 (CH)"},{"id":"+963","text":"+963 (SY)"},{"id":"+886","text":"+886 (TW)"},{"id":"+992","text":"+992 (TJ)"},{"id":"+255","text":"+255 (TZ)"},{"id":"+66","text":"+66 (TH)"},{"id":"+228","text":"+228 (TG)"},{"id":"+690","text":"+690 (TK)"},{"id":"+676","text":"+676 (TO)"},{"id":"+1868","text":"+1868 (TT)"},{"id":"+216","text":"+216 (TN)"},{"id":"+90","text":"+90 (TR)"},{"id":"+7370","text":"+7370 (TM)"},{"id":"+1649","text":"+1649 (TC)"},{"id":"+688","text":"+688 (TV)"},{"id":"+256","text":"+256 (UG)"},{"id":"+380","text":"+380 (UA)"},{"id":"+971","text":"+971 (AE)"},{"id":"+44","text":"+44 (GB)"},{"id":"+1","text":"+1 (US)"},{"id":"+1","text":"+1 (UM)"},{"id":"+598","text":"+598 (UY)"},{"id":"+998","text":"+998 (UZ)"},{"id":"+678","text":"+678 (VU)"},{"id":"+39","text":"+39 (VA)"},{"id":"+58","text":"+58 (VE)"},{"id":"+84","text":"+84 (VN)"},{"id":"+1284","text":"+1284 (VG)"},{"id":"+1340","text":"+1340 (VI)"},{"id":"+681","text":"+681 (WF)"},{"id":"+212","text":"+212 (EH)"},{"id":"+967","text":"+967 (YE)"},{"id":"+38","text":"+38 (YU)"},{"id":"+260","text":"+260 (ZM)"},{"id":"+263","text":"+263 (ZW)"}]');
+
+            $('#phonecode').select2({
+                minimumInputLength: 2,
+                width: "100%",
+                placeholder: "Phone Code",
+                data: phoneCodeData
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        function togglePasswordView(fieldId,btnClass){
+            if($(fieldId).attr('type') == 'password'){
+                $(fieldId).attr('type','text')
+            }
+            else{
+                $(fieldId).attr('type','password')
+            }
+            $(btnClass).toggle();
+        }
+    </script>
+    <script>
+        //email suggestion 
+        $('#email').on('blur', function() {
+        $(this).mailcheck({
+        suggested: function(element, suggestion) {
+        $('#suggestion').show()
+        $('#suggestion').html('<i style="font-size:12px"><span style="color:red">Typo Detected:</span> Did you mean '+'<a id="confirm" style="text-decoration: underline;cursor:pointer">'+suggestion.full+'</a>'+' ?</i>')
+        $('#email').on('change',()=>{$('#suggestion').hide()})
+        $('#confirm').on('click',function(){
+        $('#email').val(suggestion.full)
+        $('#suggestion').hide()
+        })
+
+        },
+        empty: function(element) {  
+
+        }
+        });
+
+        });
+        
+    </script>
+
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1e7946724e","applicationID":"31671751","transactionName":"YVNTMEdUW0FYBk1QXFgZcAdBXFpcFhBJXVJCU3UBQVRcXko=","queueTime":0,"applicationTime":375,"atts":"TRRQRg9OSE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
